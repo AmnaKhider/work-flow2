@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+	<body>
+		<script language="javascript" type="text/javascript">
+			<!--
+            "use strict";
+			function drawRandomCard(){
+				return Math.floor(Math.random()*10)+1;
+			}
+			
+			function dealDealer(){
+            var totalCard =0;
+			var drawCount=0;
+				
+			while(totalCard< 17){
+			var randomCard =drawRandomCard();
+			drawCount++;
+				totalCard+=randomCard;
+		document.write("You drew " + randomCard + "now has" + totalCard + "<br />" );
+				if(totalCard<=21){
+		document.write("You success with " +  drawCount + "cards totaling" + totalCard + "<br />");
+			}
+			
+				else{
+		document.write("Went bust with " +  drawCount  + "cards totaling" + totalCard + "<br />")
+				}
+			}
+			}
+			function dispalyResult(totalCard,drawCount){
+				 document.write("draw Count  :" + drawCount + "<br />")
+			       document.write("total Card  : " + totalCard + "<br />")
+				}
+						//document.write("<br />")
+			      
+			
+			dealDealer();
+				
+			//-->
+		</script>
+	</body>
+</html>
